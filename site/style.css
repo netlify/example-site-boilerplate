@@ -1,35 +1,35 @@
 :root {
-  --accent-color: #e5fc9f;
-  --trim-color: #adf2e8;
-  --tint-color: #e3eaed;
+  --accent-color: #d53cd5;
+  --trim-color: #00a395;
+  --tint-color: #f0f7fa;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--trim-color);
+  background-color: var(--tint-color);
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
-  color: #333;
+  color: #444;
   line-height: 1.7;
   border-top: solid 6px var(--trim-color);
-  border-bottom: solid 6px var(--trim-color);
   background-color: #fff;
 }
 
 header,
 main,
 footer {
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
   padding: 2rem 2rem;
 }
 footer {
-  font-size:0.8rem;
+  border-top: solid 1px var(--tint-color);
+  font-size: 0.8rem;
 }
 
 section {
@@ -37,27 +37,36 @@ section {
   padding-bottom: 2rem;
 }
 
+.tint {
+  background-color: var(--tint-color);
+}
+
 h1 {
   font-size: 3rem;
 }
 h1, h2, h3 {
   margin:0;
-  padding: 1rem 0;
+  padding: 1rem 0 0;
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin:0;
+  padding:0;
+  font-size: 1.2rem;
 }
 
 a:link,
 a:visited {
-  text-decoration: none;
-  color: #000;
-  padding: 1px 3px 2px 3px;
-  margin: 0 -3px;
-  background-color:var(--trim-color);
+  color: var(--trim-color);
 }
 a:hover,
 a:focus {
-  background-color:var(--accent-color);
+  color: var(--accent-color);
 }
 
-.tint {
-  background-color: var(--tint-color);
+
+.netliheart {
+  margin-bottom:-0.1rem;
+  width: 1rem;
 }

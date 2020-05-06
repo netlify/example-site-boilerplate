@@ -6,3 +6,10 @@ A collection of common content pieces and boilerplate design and assets for use 
 
 Everything really. We're just breaking ground.
 
+
+## Sample README conventions.
+
+Some common language and descriptions might be useful. What you'll find below this line
+
+---
+
