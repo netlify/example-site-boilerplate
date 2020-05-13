@@ -1,8 +1,12 @@
 :root {
-  --accent-color: #d53cd5;
-  --trim-color: #00a395;
+  --accent-color: #89fff5;
   --tint-color: #f0f7fa;
 }
+
+::selection{
+  background:rgba(0,0,0,0.08);
+}
+
 
 html,
 body {
@@ -13,10 +17,10 @@ body {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  color: #444;
+  font-size: 16px;
+  color: #555;
   line-height: 1.7;
-  border-top: solid 6px var(--trim-color);
+  border-top: solid 6px var(--accent-color);
   background-color: #fff;
 }
 
@@ -41,15 +45,15 @@ section {
   background-color: var(--tint-color);
 }
 
-h1 {
-  font-size: 3rem;
-}
 h1, h2, h3 {
   margin:0;
   padding: 1rem 0 0;
   line-height: 1.2;
+  color: #000;
 }
-
+h1 {
+  font-size: 3rem;
+}
 .subtitle {
   margin:0;
   padding:0;
@@ -58,11 +62,22 @@ h1, h2, h3 {
 
 a:link,
 a:visited {
-  color: var(--trim-color);
+  color: #000;
+  text-decoration: none;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: var(--accent-color);
 }
 a:hover,
 a:focus {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+}
+a.naked:link,
+a.naked:visited,
+a.naked:hover,
+a.naked:focus {
+  border-bottom-style:none;
+  background-color: transparent;
 }
 
 
