@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/netlify/example-site-boilerplate#readme",
   "dependencies": {
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.27.10"
   }
 }
